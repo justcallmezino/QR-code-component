@@ -9,7 +9,7 @@
 /* FONT PROPERTIES */
 @font-face{
   font-family: "Outfit", sans-serif;
-  src: url("../assets/fonts/Outfit-VariableFont_wght.ttf") 
+  src: url("assets/fonts/Outfit-VariableFont_wght.ttf") 
   format("truetype");
   font-display: swap;
   font-weight: 400 700;
