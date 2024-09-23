@@ -1,0 +1,72 @@
+/* COLOR PROPERTIES */
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Slate-300: hsl(212, 45%, 89%);
+  --Slate-500: hsl(216, 15%, 48%);
+  --Slate-900: hsl(218, 44%, 22%);
+}
+
+/* FONT PROPERTIES */
+@font-face{
+  font-family: "Outfit", sans-serif;
+  src: url("../assets/fonts/Outfit-VariableFont_wght.ttf") 
+  format("truetype");
+  font-display: swap;
+  font-weight: 400 700;
+}
+
+:root{
+  --fs-15px: 0.9375rem;
+}
+
+/* LAYOUT */
+body{
+  min-height: 100svh;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: var(--fs-15px);
+  background: var(--Slate-300);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  max-width: 20rem;
+  background: var(--White);
+  border-radius: 0.9375rem;
+  overflow: hidden;
+}
+
+.card__image{
+  width: 100%;
+  height: auto;
+  padding: 0.9375rem;
+  border-radius: 1.5625rem;
+}
+
+.card__header, .card__header-text{
+  text-align: center;
+  padding: 0 1.875rem;
+  margin-bottom: 0.9375rem;
+}
+
+.card__header{
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--Slate-900);
+  line-height: 1.2;
+}
+
+.card__header-text{
+  color: var(--Slate-500);
+  font-size: var(--fs-15px);
+}
+
+/* RESPONSIVE LAYOUT */
+@media screen and (min-width: 576px) {
+  .card{
+    max-width: 20rem;
+  }
+}
